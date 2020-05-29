@@ -1,9 +1,10 @@
 ﻿<Properties StartupConfiguration="{F1C6860F-D987-765D-74B4-BE94580A531A}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Enemy.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Spawner.cs">
     <Files>
-      <File FileName="Assets/Scripts/Player.cs" Line="32" Column="10" />
+      <File FileName="Assets/Scripts/Player.cs" Line="9" Column="22" />
       <File FileName="Assets/Scripts/Shot.cs" />
-      <File FileName="Assets/Scripts/Enemy.cs" Line="44" Column="12" />
+      <File FileName="Assets/Scripts/Enemy.cs" />
+      <File FileName="Assets/Scripts/Spawner.cs" Line="15" Column="28" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,7 +12,7 @@
           <Node name="White Blood Cell Remastered 2d" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Enemy.cs" selected="True" />
+                <Node name="Spawner.cs" selected="True" />
               </Node>
             </Node>
           </Node>
