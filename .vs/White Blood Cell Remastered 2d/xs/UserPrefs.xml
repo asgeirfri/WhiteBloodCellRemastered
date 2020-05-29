@@ -1,12 +1,20 @@
 ﻿<Properties StartupConfiguration="{F1C6860F-D987-765D-74B4-BE94580A531A}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Enemy.cs">
     <Files>
-      <File FileName="Assets/Scripts/Player.cs" Line="24" Column="34" />
+      <File FileName="Assets/Scripts/Player.cs" Line="32" Column="10" />
+      <File FileName="Assets/Scripts/Shot.cs" />
+      <File FileName="Assets/Scripts/Enemy.cs" Line="44" Column="12" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="White Blood Cell Remastered 2d" expanded="True" selected="True" />
+          <Node name="White Blood Cell Remastered 2d" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Enemy.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>

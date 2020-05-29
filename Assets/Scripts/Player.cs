@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb2d = GetComponent<Rigidbody2D> ();
+        rb2d = GetComponent<Rigidbody2D>();
         InvokeRepeating("LaunchProjectile", 0.3f, 0.3f);
     }
 
@@ -25,9 +25,10 @@ public class Player : MonoBehaviour
         {
             Vector2 direction = delta.normalized;
             rb2d.velocity = (direction * startSpeed); // Add delta
-        } else
+        }
+        else
         {
-            rb2d.velocity = (new Vector2(0,0));
+            rb2d.velocity = (new Vector2(0, 0));
         }
     }
 
