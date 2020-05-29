@@ -16,10 +16,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 fingerPosition = Input.mousePosition;
-
-        Debug.Log((fingerPosition - rb2d.position).normalized.ToString());
-
+        Vector2 fingerPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 direction = (fingerPosition - rb2d.position).normalized;
 
         rb2d.velocity = (direction * startSpeed);
