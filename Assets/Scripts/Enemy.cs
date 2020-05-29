@@ -21,12 +21,6 @@ public class Enemy : MonoBehaviour
     {
         if (player)
         {
-            //Vector2 playerAngle = (player.position - rb2d.position).normalized;
-            //rb2d.MoveRotation(Mathf.Min(angleDelta, maxRotation));
-            //rb2d.rotation = Vector2.Angle(new Vector2(0, 1), playerAngle);
-            //rb2d.velocity = new Vector2(0, 1) * startSpeed;
-
-
             // get a rotation that points Z axis forward, and the Y axis towards the target
             Quaternion targetRotation = Quaternion.LookRotation(Vector3.forward, (player.position - rb2d.position));
 
@@ -38,18 +32,5 @@ public class Enemy : MonoBehaviour
         {
             rb2d.velocity = new Vector2(0, 0);
         }
-
-
-        //if (player)
-        //{
-        //    Vector2 playerPosition = player.position;
-        //    Vector2 delta = (playerPosition - rb2d.position);
-        //    Vector2 direction = delta.normalized;
-        //    rb2d.velocity = (direction * startSpeed); // Add delta
-        //}
-        //else
-        //{
-        //    rb2d.velocity = (new Vector2(0, 0));
-        //}
     }
 }

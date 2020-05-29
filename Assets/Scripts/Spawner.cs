@@ -12,7 +12,6 @@ public class Spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Hello BITCH");
         StartCoroutine(SpawnInSeconds(Random.Range(minWait, maxWait)));
     }
 
@@ -24,7 +23,6 @@ public class Spawner : MonoBehaviour
 
     IEnumerator SpawnInSeconds(float seconds)
     {
-        Debug.Log("Hello");
         yield return new WaitForSeconds(seconds);
         Spawn();
         StartCoroutine(SpawnInSeconds(Random.Range(minWait, maxWait)));

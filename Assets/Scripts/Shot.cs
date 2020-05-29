@@ -17,4 +17,12 @@ public class Shot : MonoBehaviour
     {
         
     }
+
+    void OnCollisionEnter2D (Collision2D col) {
+        if (col.gameObject.tag == "Enemy")
+        {
+            Object.Destroy(col.gameObject);
+            Object.Destroy(gameObject);
+        }
+    }
 }
