@@ -8,12 +8,14 @@ public class Enemy : MonoBehaviour
     public float maxRotation = 10;
     private Rigidbody2D rb2d;
     private Rigidbody2D player;
+    private Score score;
 
     // Start is called before the first frame update
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         player = GameObject.Find("Player").GetComponent<Rigidbody2D>();
+        score = GameObject.Find("Score").GetComponent<Score>();
     }
 
     // Update is called once per frame
@@ -32,5 +34,11 @@ public class Enemy : MonoBehaviour
         {
             rb2d.velocity = new Vector2(0, 0);
         }
+    }
+
+    public void Die()
+    {
+        Object.Destroy(gameObject);
+        score.AddPoints(1);
     }
 }

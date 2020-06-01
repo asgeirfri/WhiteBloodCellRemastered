@@ -1,10 +1,14 @@
 ﻿<Properties StartupConfiguration="{F1C6860F-D987-765D-74B4-BE94580A531A}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Spawner.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameManager.cs">
     <Files>
       <File FileName="Assets/Scripts/Player.cs" Line="9" Column="22" />
+      <File FileName="Assets/Scripts/Enemy.cs" Line="18" Column="1" />
+      <File FileName="Assets/Scripts/Spawner.cs" />
       <File FileName="Assets/Scripts/Shot.cs" />
-      <File FileName="Assets/Scripts/Enemy.cs" />
-      <File FileName="Assets/Scripts/Spawner.cs" Line="15" Column="28" />
+      <File FileName="Assets/Scripts/Score.cs" Line="14" Column="6" />
+      <File FileName="Assets/Scripts/NewClass.cs" Line="15" Column="39" />
+      <File FileName="Assets/Scripts/NewClass.cs" Line="33" Column="6" />
+      <File FileName="Assets/Scripts/NewClass.cs" Line="32" Column="12" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,7 +16,7 @@
           <Node name="White Blood Cell Remastered 2d" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Spawner.cs" selected="True" />
+                <Node name="GameManager.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -22,7 +26,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f817fa5e-0863-430d-b8f2-b8a13b21bc79" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0ebbdb1c-cfe0-4a6d-b5e4-5527fec8a254" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -21,7 +21,7 @@ public class Shot : MonoBehaviour
     void OnCollisionEnter2D (Collision2D col) {
         if (col.gameObject.tag == "Enemy")
         {
-            Object.Destroy(col.gameObject);
+            col.gameObject.GetComponent<Enemy>().Die();
             Object.Destroy(gameObject);
         }
     }
