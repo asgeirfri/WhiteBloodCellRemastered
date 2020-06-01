@@ -433,8 +433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startSpeed: 2
-  shotPrefab: {fileID: 7258398467457539014, guid: 104ed287a349f4057b89035c838b7735,
-    type: 3}
+  shotPrefab: {fileID: 0}
 --- !u!1 &1584843172
 GameObject:
   m_ObjectHideFlags: 0

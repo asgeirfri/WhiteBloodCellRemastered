@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1364152024440107943}
   - component: {fileID: 8312879962777059678}
-  - component: {fileID: 4056992672879637810}
+  - component: {fileID: -4144482144718798885}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4056992672879637810
+--- !u!114 &-4144482144718798885
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,5 +95,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startSpeed: 2
-  shotPrefab: {fileID: 7258398467457539014, guid: 104ed287a349f4057b89035c838b7735,
+  shotPrefab: {fileID: 8217623624788057447, guid: 104ed287a349f4057b89035c838b7735,
     type: 3}
