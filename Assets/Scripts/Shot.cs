@@ -10,6 +10,12 @@ public class Shot : MonoBehaviour
     void Start()
     {
         Object.Destroy(gameObject, lifeTime);
+        var player = GameObject.Find("Player")?.GetComponent<Rigidbody2D>();
+        if (player != null)
+        {
+            Physics.IgnoreCollision(player.gameObject.GetComponent<Collider>(), GetComponent<Collider>());
+        }
+       
     }
 
     // Update is called once per frame

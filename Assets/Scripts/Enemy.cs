@@ -14,14 +14,14 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
-        player = GameObject.Find("Player").GetComponent<Rigidbody2D>();
+        player = GameObject.Find("Player")?.GetComponent<Rigidbody2D>();
         score = GameObject.Find("Score").GetComponent<Score>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (player)
+        if (player != null)
         {
             // get a rotation that points Z axis forward, and the Y axis towards the target
             Quaternion targetRotation = Quaternion.LookRotation(Vector3.forward, (player.position - rb2d.position));
@@ -41,4 +41,5 @@ public class Enemy : MonoBehaviour
         Object.Destroy(gameObject);
         score.AddPoints(1);
     }
+
 }

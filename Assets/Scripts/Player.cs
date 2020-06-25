@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Player : MonoBehaviour
 {
@@ -38,5 +36,26 @@ public class Player : MonoBehaviour
         Vector2 direction = (fingerPosition - rb2d.position).normalized;
         GameObject shot = Instantiate(shotPrefab, rb2d.position, Quaternion.identity) as GameObject;
         shot.GetComponent<Rigidbody2D>().velocity = (direction * -1 * 3);
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+
+        print(other.gameObject.tag);
+        if (other.gameObject.tag == "Shot")
+        {
+            Physics2D.IgnoreCollision(other.gameObject.GetComponent<BoxCollider2D>(), GetComponent<BoxCollider2D>());
+        }
+        if (other.gameObject.tag == "Enemy")
+        {
+            print("Enemy");
+            Die();
+        }
+    }
+
+    public void Die()
+    {
+        Object.Destroy(gameObject);
+        // Todo: end game
     }
 }
